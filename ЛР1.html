@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODSTER - Доставка бизнес-ланчей в Москве</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: #008c28;
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #008c28;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        section {
+            margin-bottom: 0;
+            background-color: #fff;
+            padding: 60px 30px;
+            border-radius: 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-size: 45px;
+            font-weight: 500;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+        
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 30px;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: 500;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #008c28;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0 10px;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>FOODSTER</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Заказ</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>О нас</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://www.timeout.ru/wp-content/uploads/resto/42184e795c462dc5991dfa355c35d3bf.jpg" alt="Доставка бизнес-ланчей">
+                    </div>
+                    <div class="about-text">
+                        <p>FOODSTER - доставка номер 1 в Москве. Вкусные и полезные обеды для вас.</p>
+                        <p>Доставим заказ в любое удобное для вас время.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="container">
+                <h2>Наши преимущества</h2>
+                <ul>
+                    <li>Свежие продукты и ежедневное приготовление</li>
+                    <li>Быстрая доставка</li>
+                    <li>Разнообразное меню</li>
+                    <li>Скидки</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="popular-dishes">
+            <div class="container">
+                <h2>Популярные блюда</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Блюдо</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Куриный суп с лапшой</td>
+                            <td>Ароматный куриный бульон с домашней лапшой и зеленью</td>
+                            <td>250 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Греческий салат</td>
+                            <td>Свежие овощи, оливки, сыр фета и оливковое масло</td>
+                            <td>320 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Куриная грудка с овощами</td>
+                            <td>Нежное куриное филе с сезонными овощами на гриле</td>
+                            <td>380 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Паста Карбонара</td>
+                            <td>Спагетти с беконом, сыром пармезан и соусом на основе сливок</td>
+                            <td>350 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Лосось с картофельным пюре</td>
+                            <td>Филе лосося на пару с нежным картофельным пюре</td>
+                            <td>450 руб.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>Адрес: Москва, ул. Прянишникова 2А</p>
+                    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p>Время работы: Пн-Пт 9:00-18:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
